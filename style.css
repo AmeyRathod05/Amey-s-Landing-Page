@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Roboto:wght@300;500;700&family=Rubik:wght@300&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+
+}
+
+html,body{
+    line-height: 1.4;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+}
+/* hero-section css */
+.hero-section{
+    background-image: url(2345.jfif);
+    background-size: cover;
+    min-height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.text-container{
+    color: white;
+    max-width: 900px;
+    margin: 0px auto;
+    padding-top: 180px;
+    padding-left: 30px;
+    text-align: center;
+}
+.text-container h2{
+    font-size: 30px;
+}
+.lg-text{
+    font-size: 62px;
+}
+
+/* black-box */
+.black-box{
+    text-transform: uppercase;
+    background-color: black;
+    padding: 20px;
+}
+.black-box h2{
+  
+    font-size: 65px;
+    color: white;
+    text-align: center;
+}
+.black-box h2 span{
+    font-weight: 400;
+    font-size: 95px;
+}
+
+/* card-box */
+
+.img-container img{
+    border-radius: 10px;
+    width: 300px;
+}
+.card-box{
+max-width: 1100px;
+    display: grid;
+    gap: 20px;
+    grid-template-columns:repeat(auto-fit,minmax(320px,1fr));
+    margin: 50px auto;
+
+}
+.card{
+    max-width: 300px;
+    height: 420px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.2);
+    margin: 20px 0px;
+    transition: 0.2s ease-in-out;
+}
+
+.card:hover{
+    transform: scale(1.04);
+    box-shadow: 3px 5px 5px rgba(1,1,1,0.3);
+    transition: 0.2s ease-in-out;
+
+}
+.card-item{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.card-content{
+    
+    padding: 10px;
+}
+.card-content h3{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+/* bottom-section */
+
+.bottom-section{
+    display: flex;
+    
+}
+/* contact & about */
+.contact{
+    background-color: rgb(111, 200, 255);
+}
+
+.about{
+    background-color: rgb(189, 127, 255);
+}
+.contact ,.about{
+    min-height: 300px;
+    padding: 32px;
+    color: rgb(0, 0, 0);
+}
+.contact p , .about p{
+    margin-bottom: 20px;
+}
+.contact h2, .about h2{
+    font-size: 60px;
+    font-weight: 300;
+}
+/* footer */
+footer{
+    text-align: center;
+  color: aliceblue;
+    text-transform: uppercase;
+    background-color: black;
+    padding: 20px;
+}
+/* responsive css */
+@media (max-width:786px){
+    .bottom-section{
+        flex-direction: column;
+    }
+    
+}
